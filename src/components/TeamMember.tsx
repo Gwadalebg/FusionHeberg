@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from "../../styled-system/css";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+//import AOS from 'aos';
+//import 'aos/dist/aos.css';
 
 // Définition des correspondances entre les rôles et les couleurs
 interface RoleColors {
@@ -28,11 +28,11 @@ type TeamMemberProps = {
 
 const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image }) => {
   // Initialiser AOS une seule fois
-  React.useEffect(() => {
+  /*React.useEffect(() => {
     AOS.init({
       duration: 1000, // Durée de l'animation en millisecondes
     });
-  }, []);
+  }, []);*/
 
   // Convertir le nom et le rôle en minuscules pour une correspondance insensible à la casse
   const lowercaseName = name.toLowerCase();
@@ -47,7 +47,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image }) => {
   return (
     <div
       className={css({ padding: '1rem', marginBottom: '1rem', border: `2px solid ${nameColor}`, width: '100%', borderRadius: '8px' })}
-      data-aos="zoom-in" // Animation de zoom-in
+      //data-aos="zoom-in" // Animation de zoom-in
     >
       {image && <img src={image} alt="Team Member" style={{ width: '100%', borderRadius: '100%', marginBottom: '0.5rem' }} />} {/* Affichage de l'image si elle est fournie */}
       <h3 className={css({ fontWeight: 'medium', fontSize: '50px' })}>{name}</h3>

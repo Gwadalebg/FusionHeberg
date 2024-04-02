@@ -1,13 +1,10 @@
-"use client"
-
-import React, {useRef } from 'react';
 import { css } from "../../styled-system/css";
 import { colors } from '../lib/color';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+//import AOS from 'aos';
+//import 'aos/dist/aos.css';
 
 const Feature = ({ title, icon}: {title: string, icon: React.ReactNode}) => {
-  const elementRef = useRef(null);
+  /*const elementRef = useRef(null);
 
   React.useEffect(() => {
     AOS.init({
@@ -15,13 +12,13 @@ const Feature = ({ title, icon}: {title: string, icon: React.ReactNode}) => {
       once: true, // Animation ne se répète qu'une seule fois
     });
 
-  });
+  });*/
 
   return (
     <div
-      ref={elementRef}
-      data-aos="fade-up" // Animation de fondu vers le haut
-      data-aos-duration="1000" // Durée de l'animation en millisecondes
+     // ref={elementRef}
+      //data-aos="fade-up" // Animation de fondu vers le haut
+      //data-aos-duration="1000" // Durée de l'animation en millisecondes
       style={{ background: colors.secondary }}
       className={css({ padding: '1.5rem',  display:'flex', flexDirection: 'row', borderRadius: '15px', marginBottom: '2rem' })}
     >

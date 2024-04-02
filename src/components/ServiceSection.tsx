@@ -1,19 +1,16 @@
-"use client"
-
-import React from 'react';
 import { css } from "../../styled-system/css";
 import Service from "./Service";
 import { colors } from '../lib/color';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+//import AOS from 'aos';
+//import 'aos/dist/aos.css';
 
 const ServicesSection = () => {
-  React.useEffect(() => {
+/*  React.useEffect(() => {
     AOS.init({
       duration: 1000, // Durée de l'animation en millisecondes
       once: true, // Animation ne se répète qu'une seule fois
     });
-  }, []);
+  }, []);*/
 
   return (
     <section className={css({ padding: '8rem 0',  width: '100%' })}>
