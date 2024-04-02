@@ -13,7 +13,7 @@ const ServicesSection = () => {
   }, []);*/
 
   return (
-    <section className={css({ padding: '8rem 0',  width: '100%' })}>
+    <section style={{ background: colors.black }} className={css({ padding: '8rem 0',  width: '100%' })}>
       <div className="container" style={{ maxWidth: '100%' }}>
         <h2 className={css({ fontSize: '100px', fontFamily:'saira', textAlign: 'center', fontWeight: 'bold', marginBottom: '1rem' })}>Voici nos <span style={{ color: colors.primary}}>services!</span></h2>
         <div

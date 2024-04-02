@@ -3,6 +3,7 @@
 export const colors = {
   primary: "#00C2FF",
   secondary: "#1E1E1E",
+  black: '#111111',
   grey: '#ABABAB', 
   tertiary: '#ADADAD',
   bg: "#0A0017",

@@ -7,7 +7,7 @@ import { colors } from '../lib/color';
 
 const TeamSection = () => {
   return (
-    <section className={css({ padding: '8rem 0', marginTop: '2rem', width: '100%' })}>
+    <section style={{ background: colors.black }} className={css({ padding: '8rem 0', marginTop: '2rem', width: '100%' })}>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <h2 className={css({ fontSize: '100px', fontFamily: 'saira', textAlign: 'center', fontWeight: 'bold', marginBottom: '1rem' })}>Voici notre <span style={{ color: colors.primary }}>équipe!</span></h2>
         <div className={css({ display: 'grid', width:'100%', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', justifyItems: 'center', gap: '1rem' })}>
