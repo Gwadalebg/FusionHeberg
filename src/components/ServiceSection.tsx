@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { css } from "../../styled-system/css";
 import Service from "./Service";
 import { colors } from '../lib/color';
@@ -8,7 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const ServicesSection = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     AOS.init({
       duration: 1000, // Durée de l'animation en millisecondes
       once: true, // Animation ne se répète qu'une seule fois

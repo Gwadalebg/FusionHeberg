@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useRef } from 'react';
+import React, {useRef } from 'react';
 import { css } from "../../styled-system/css";
 import { colors } from '../lib/color';
 import AOS from 'aos';
@@ -9,7 +9,7 @@ import 'aos/dist/aos.css';
 const Feature = ({ title, icon}: {title: string, icon: React.ReactNode}) => {
   const elementRef = useRef(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     AOS.init({
       duration: 1000, // Durée de l'animation en millisecondes
       once: true, // Animation ne se répète qu'une seule fois
