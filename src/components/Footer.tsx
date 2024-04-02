@@ -25,7 +25,7 @@ const Footer = () => {
             <ul className={css({ listStyleType: 'none', padding: 0 })}>
               <li>Minecraft Java</li>
               <li>BungeeCord</li>
-              <li style={{ color: colors.tertiary }}>Web</li>
+              <li>Web</li>
               <li>Discord.JS</li>
               <li>Discord.PY</li>
             </ul>
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
       </div>
       <div style={{ background: colors.black }} className={css({ textAlign: 'center', marginTop: '2rem', fontSize: '18px', fontWeight: 'bold' })}>
-        <p>©️ FusionHeberg 2024. - Site conçu par Fusion Studio.</p>
+        <p className={css({ marginTop: '2rem'})}>©️ Fusion<span style={{ color: colors.primary }}>Heberg</span> 2024. - Site conçu par Fusion Studio.</p>
       </div>
     </footer>
   );
