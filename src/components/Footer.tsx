@@ -1,15 +1,26 @@
 import React from 'react';
 import { css } from "../../styled-system/css";
 import { colors } from '../lib/color';
+import { Youtube, Twitter, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer style={{ backgroundColor: colors.night.bg}} className={css({ color: '#fff', padding: '4rem 0' })}>
       <div className="container" style={{ maxWidth: '90%' }}>
         <div className={css({ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '2rem' })}>
-          {/* Section FusionHeberg */}
+        <div>
+            <h4 className={css({ fontSize: '24px', marginBottom: '1rem', fontWeight: 'extrabold'  })}>
+              <img src='https://my.fusionheberg.com/images/1711226924.png' alt="FusionHeberg Logo" />
+              Fusion<span style={{ color: colors.primary }}>Heberg</span>
+            </h4>
+            <div className={css({ display: 'flex', gap: '10px' })}>
+              <Youtube size="24" color="#fff" />
+              <Twitter size="24" color="#fff" />
+              <Instagram size="24" color="#fff" />
+              <Facebook size="24" color="#fff" />
+            </div>
+          </div>
           <div>
-            <h4 className={css({ fontSize: '24px', marginBottom: '1rem', fontWeight: 'extrabold'  })}>FusionHeberg</h4>
             <p className={css({ fontSize: '18px', marginBottom: '1rem', color: colors.primary })}><strong>Nos services</strong></p>
             <ul className={css({ listStyleType: 'none', padding: 0 })}>
               <li>Minecraft Java</li>
@@ -40,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className={css({ textAlign: 'center', marginTop: '2rem', fontSize: '18px', fontWeight: 'bold' })}>
+      <div style={{ background: colors.black }} className={css({ textAlign: 'center', marginTop: '2rem', fontSize: '18px', fontWeight: 'bold' })}>
         <p>©️ FusionHeberg 2024. - Site conçu par Fusion Studio.</p>
       </div>
     </footer>

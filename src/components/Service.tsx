@@ -74,7 +74,7 @@ const Service = ({ title, ram, vcore, storage, price, icon, aosType, aosDuration
           <p className={css({ color: '#999' })}>À partir de</p>
           <a style={{ color: colors.grey}}><span style={{ color: colors.primary}} className={css({ fontSize: '50px', fontWeight: 'bold', })}>{price}</span>/mois</a>
         </div>
-        <div style={{ color: colors.tertiary}} className={css({ fontSize: '25px', marginTop: '3rem', lineHeight: '0.9', textAlign: 'center' })}>
+        <div style={{ color: colors.tertiary}} className={css({ fontSize: '25px', marginTop: '3rem', lineHeight: '0.9', textAlign: 'center', fontWeight: 'bold' })}>
           <p className={css({ marginBottom: '0.5rem' })}>RAM: {ram}</p>
           <p className={css({ marginBottom: '0.5rem' })}>vCore: {vcore}</p>
           <p className={css({ marginBottom: '1rem' })}>Stockage: {storage}</p>
