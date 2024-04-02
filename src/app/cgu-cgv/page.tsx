@@ -5,7 +5,7 @@ import { css } from '../../../styled-system/css';
 
 const TermsAndConditions = () => {
   return (
-    <div className="container">
+    <div className={css({ color: 'white' })}>
       <h1 className={css({ fontSize: '28px', marginBottom: '1rem', fontWeight: 'bold' })}>Conditions Générales de Vente et d'Utilisation de FusionHeberg</h1>
 
       <article className="article">
