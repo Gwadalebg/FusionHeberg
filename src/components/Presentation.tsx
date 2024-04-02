@@ -5,7 +5,6 @@ import { css } from "../../styled-system/css";
 import Feature from "./Feature"; // Importer la couleur primaire depuis le fichier color.ts
 import { Timer, Headset, DollarSign } from 'lucide-react'; // Importer les icônes
 import { colors } from '../lib/color';
-import { flex } from '@/styled-system/patterns';
 
 const PresentationSection = () => {
   return (

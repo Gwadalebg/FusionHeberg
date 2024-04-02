@@ -4,7 +4,7 @@ import { colors } from '../lib/color';
 import { ShoppingCart } from 'lucide-react'; // Import de l'icône "Package" de Lucide React
 
 // Composant Button avec possibilité d'inclure une icône
-const Button = ({ children, icon, title }) => {
+const Button = ({ children, icon, title }: { children: React.ReactNode, icon: React.ReactNode, title: string}) => {
     const handleClick = () => {
       const lowercaseTitle = title.toLowerCase();
       window.location.href = `https://my.fusionheberg.com/${lowercaseTitle}`;
@@ -44,7 +44,7 @@ const Button = ({ children, icon, title }) => {
     );
   };
 
-const Service = ({ title, ram, vcore, storage, price, icon, aosType, aosDuration, aosDelay }) => {
+const Service = ({ title, ram, vcore, storage, price, icon, aosType, aosDuration, aosDelay }: {icon: string, title: string, price: string, ram: string, vcore: string, aosType: string, aosDuration: string, aosDelay: string, storage: string}) => {
   return (
     <div 
       style={{ background: colors.secondary }} 

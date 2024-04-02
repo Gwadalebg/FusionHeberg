@@ -6,7 +6,7 @@ import { colors } from '../lib/color';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Feature = ({ title, icon, index }) => {
+const Feature = ({ title, icon}: {title: string, icon: React.ReactNode}) => {
   const elementRef = useRef(null);
 
   useEffect(() => {
@@ -15,9 +15,7 @@ const Feature = ({ title, icon, index }) => {
       once: true, // Animation ne se répète qu'une seule fois
     });
 
-    const delay = index * 100; // Délai différent pour chaque élément
-    elementRef.current.setAttribute('data-aos-delay', delay);
-  }, [index]);
+  });
 
   return (
     <div

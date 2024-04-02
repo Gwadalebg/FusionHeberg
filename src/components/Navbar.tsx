@@ -10,7 +10,7 @@ import { User2Icon } from 'lucide-react'
 const fusionHebergLogo = "https://my.fusionheberg.com/images/1711226924.png"
 
 // Composant de bouton réutilisable avec lien
-const Button = ({ href, children }) => (
+const Button = ({ href, children }: {href: string, children: React.ReactNode}) => (
     <Link  href={`https://my.fusionheberg.com${href}`}>
       <button className={css({ 
         backgroundColor: 'transparent', 
@@ -34,7 +34,7 @@ const Button = ({ href, children }) => (
   );
 
 // Composant de lien de la navbar utilisant le bouton
-const NavItem = ({ href, children }) => (
+const NavItem = ({ href, children }: {href: string, children: React.ReactNode}) => (
     <Link href={`https://my.fusionheberg.com${href}`}>
       <p className={css({ 
         color: href === "/" ? colors.primary : '#fff',

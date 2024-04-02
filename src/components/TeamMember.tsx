@@ -1,23 +1,32 @@
-"use client"
-
 import React from 'react';
 import { css } from "../../styled-system/css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Définition des correspondances entre les rôles et les couleurs
-const roleColors = {
+interface RoleColors {
+  [key: string]: string;
+}
+
+const roleColors: RoleColors = {
   admin: '#E74C3C',
   director: '#FF0000',
   commercial: '#F1C40F',
   moderator: '#E67E22',
 };
 
-const capitalizeFirstLetter = (string) => {
+
+const capitalizeFirstLetter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
-const TeamMember = ({ name, role, image }) => {
+type TeamMemberProps = {
+  name: string;
+  role: string;
+  image: string;
+};
+
+const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image }) => {
   // Initialiser AOS une seule fois
   React.useEffect(() => {
     AOS.init({
