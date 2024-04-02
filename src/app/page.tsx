@@ -1,3 +1,5 @@
+"use client"
+
 import { css } from '../../styled-system/css';
 import Navbar from '../components/Navbar';
 import Acceuil from '../components/Acceuil';
