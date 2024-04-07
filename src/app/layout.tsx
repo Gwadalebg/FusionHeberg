@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { colors } from "../lib/color";
-import { fusionHebergLogo } from "@/components/Navbar";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Fusion Heberg est l'hébergeur parfait fusionnant bon prix et bonnes performances",
   openGraph: {
     images: [{
-    url: fusionHebergLogo,
+    url: "https://my.fusionheberg.com/images/1711226924.png",
   }]
   }
 }

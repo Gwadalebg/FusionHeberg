@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { colors } from '../lib/color';
 import { Menu, User2Icon } from 'lucide-react';
 
-export const fusionHebergLogo = "https://my.fusionheberg.com/images/1711226924.png";
+const fusionHebergLogo = "https://my.fusionheberg.com/images/1711226924.png";
 
 const Button = ({ href, children }: {href: string, children : React.ReactNode}) => (
   <Link href={`https://my.fusionheberg.com${href}`}>
