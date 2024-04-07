@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div style={{ background: colors.black }} className={css({ textAlign: 'center', marginTop: '2rem', fontSize: '18px', fontWeight: 'bold' })}>
+      <div className={css({ textAlign: 'center', marginTop: '4rem', fontSize: '18px', fontWeight: 'bold' })}>
         <p className={css({ marginTop: '2rem'})}>©️ Fusion<span style={{ color: colors.primary }}>Heberg</span> 2024. - Site conçu par Fusion Studio.</p>
       </div>
     </footer>

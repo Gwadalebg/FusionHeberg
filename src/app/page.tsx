@@ -13,7 +13,7 @@ export default function Home() {
 
 
   return (
-      <div style={{ color: colors.text_primary }}>
+      <div style={{ color: colors.text_primary, overflowX: 'hidden' }}>
         <Navbar />
         <Acceuil />
         <div className={css({ fontFamily: 'rubik' })}>
