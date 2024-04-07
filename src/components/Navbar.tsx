@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { colors } from '../lib/color';
 import { Menu, User2Icon } from 'lucide-react';
 
-const fusionHebergLogo = "https://my.fusionheberg.com/images/1711226924.png";
+export const fusionHebergLogo = "https://my.fusionheberg.com/images/1711226924.png";
 
 const Button = ({ href, children }: {href: string, children : React.ReactNode}) => (
   <Link href={`https://my.fusionheberg.com${href}`}>
@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <nav className={css({ margin: '2rem 2rem', fontFamily: 'rubik' })}>
       <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <img src={fusionHebergLogo} alt="Fusion Heberg Logo" style={{ height: '100px', marginRight: '1rem' }} />
+        <img src={fusionHebergLogo} style={{ height: '100px', marginRight: '1rem' }} />
 
         {/* Menu complet */}
         <div className={css({ 
