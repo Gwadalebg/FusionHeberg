@@ -7,7 +7,7 @@ import { colors } from "../lib/color";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fusion Heberg",
+  title: "Fusion Heberg - Acceuil",
   description: "Fusion Heberg est l'hébergeur parfait fusionnant bon prix et bonnes performances",
   openGraph: {
     images: [{
