@@ -15,7 +15,7 @@ const ServicesSection = () => {
   return (
     <section style={{ background: colors.black }} className={css({ padding: '8rem 0',  width: '100%' })}>
       <div className="container" style={{ maxWidth: '100%' }}>
-        <h2 className={css({ fontSize: '100px', fontFamily:'saira', textAlign: 'center', fontWeight: 'bold', marginBottom: '1rem' })}>Voici nos <span style={{ color: colors.primary}}>services!</span></h2>
+        <h2 className={css({ fontSize: '100px', '@media (max-width: 768px)': { fontSize:'80px' }, fontFamily:'saira', textAlign: 'center', fontWeight: 'bold', marginBottom: '1rem' })}>Voici nos <span style={{ color: colors.primary}}>services!</span></h2>
         <div
           className={css({ display: 'grid', scale: '0.9',  gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', maxWidth: '100%' })}
         >

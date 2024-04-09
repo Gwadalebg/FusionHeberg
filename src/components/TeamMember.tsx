@@ -46,7 +46,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, role, image }) => {
 
   return (
     <div
-      className={css({ padding: '1rem', marginBottom: '1rem', display: 'flex', justifyContent:'center', alignItems:'center', flexDirection:'column', border: `2px solid ${nameColor}`, width: '100%', borderRadius: '8px' })}
+      className={css({ padding: '1rem', marginBottom: '1rem', display: 'flex', gap: '-20px', justifyContent:'center', alignItems:'center', flexDirection:'column', border: `2px solid ${nameColor}`, width: '100%', borderRadius: '8px' })}
       //data-aos="zoom-in" // Animation de zoom-in
     >
       {image && <img src={image} alt="Team Member" style={{ width: '100%', borderRadius: '100%', marginBottom: '0.5rem' }} />} {/* Affichage de l'image si elle est fournie */}

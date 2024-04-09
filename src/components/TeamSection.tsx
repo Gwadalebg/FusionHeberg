@@ -9,7 +9,7 @@ const TeamSection = () => {
   return (
     <section style={{ background: colors.black }} className={css({ padding: '8rem 0',width: '100%' })}>
       <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <h2 className={css({ fontSize: '100px', fontFamily: 'saira', textAlign: 'center', fontWeight: 'bold', marginBottom: '1rem' })}>Voici notre <span style={{ color: colors.primary }}>équipe!</span></h2>
+        <h2 className={css({ fontSize: '100px', '@media (max-width: 768px)': { fontSize:'80px' }, fontFamily: 'saira', textAlign: 'center', fontWeight: 'bold', marginBottom: '1rem' })}>Voici notre <span style={{ color: colors.primary }}>équipe!</span></h2>
         <div className={css({ display: 'grid', width:'100%', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', justifyItems: 'center', gap: '1rem' })}>
           <TeamMember image='https://images-ext-1.discordapp.net/external/qaJON-STxBPanXK6TPTIXDh_ZleUjOBVC5vwqVl-3M0/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/697012204339462216/4300194f71878e1faa01a33c6f1e6aa9.png?format=webp&quality=lossless&width=416&height=416' name="Ludo M." role="admin" />
           <TeamMember image='https://images-ext-1.discordapp.net/external/2w-oR1zNjvU27obVBYqExYRosnzWH9_YcOkkciMEVnQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/842845835477123122/d5242de302333b3b7239d164cb0ff4c2.png?format=webp&quality=lossless&width=1252&height=1252' name="Antoine G." role="director" />

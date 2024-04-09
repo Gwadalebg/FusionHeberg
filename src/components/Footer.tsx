@@ -1,23 +1,26 @@
 import React from 'react';
 import { css } from "../../styled-system/css";
 import { colors } from '../lib/color';
-import { Youtube, Twitter, Instagram, Facebook } from 'lucide-react';
+import { Youtube, Twitter, Discord, Instagram, Paypal } from 'react-bootstrap-icons'
 
 const Footer = () => {
   return (
     <footer style={{ backgroundColor: colors.night.bg}} className={css({ color: '#fff', padding: '4rem 0' })}>
       <div className="container" style={{ maxWidth: '90%' }}>
-        <div className={css({ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: '2rem' })}>
-        <div>
-            <h4 className={css({ fontSize: '24px', marginBottom: '1rem', fontWeight: 'extrabold'  })}>
-              <img src='https://my.fusionheberg.com/images/1711226924.png' className={css({ width: "20%" })} alt="FusionHeberg Logo" />
+        <div className={css({ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', '@media (max-width: 768px)': {gridTemplateColumns: '1fr 1fr 1fr 1fr'}, gap: '2rem' })}>
+        <div className={css({marginLeft: '2rem'})}>
+            <h4 className={css({ fontSize: '24px', marginBottom: '1rem', fontWeight: 'extrabold', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems:'center'})}>
+              <img src='https://my.fusionheberg.com/images/1711226924.png' className={css({ width: "30%" })} alt="FusionHeberg Logo" />
               Fusion<span style={{ color: colors.primary }}>Heberg</span>
             </h4>
-            <div className={css({ display: 'flex', gap: '10px' })}>
-              <Youtube size="40" color="#fff" />
-              <Twitter size="40" color="#fff" />
-              <Instagram size="40" color="#fff" />
-              <Facebook size="40" color="#fff" />
+            <div className={css({ display: 'flex', marginLeft: '1rem',  gap: '10px' })}>
+            <Discord color='#5865F2' size={30} />
+              <Youtube color='#FF0000' size={30} />
+              <Twitter color='#1DA1F2' size={30} />
+              <Instagram color='#E1306C' size={30} />
+            </div>
+            <div className={css({ display: 'flex', marginLeft: '1rem',marginTop: '1rem', gap: '10px' })}>
+              <Paypal color='#FFF' size={70} />
             </div>
           </div>
           <div>
