@@ -24,24 +24,24 @@ const ServicesSection = () => {
             ram="4Go de RAM" 
             vcore="1 vCore" 
             icon="https://my.fusionheberg.com/storage/categories/IKayzXCwtkatj4H4VQ0bnWIV1xlJrNFTdq3UOrRx.png"
-            storage="20Go de Stockage SSD" 
-            price="2.00€" 
+            storage="15Go de Stockage SSD" 
+            price="1.99€" 
             aosType="fade-right" // Animation de fondu vers la gauche
             aosDuration="1000" // Durée de l'animation en millisecondes
             aosDelay="0" // Pas de délai pour le premier élément
           />
           <Service 
             title="BungeeCord" 
-            ram="4Go de RAM" 
+            ram="2Go de RAM" 
             vcore="1 vCore" 
             icon="https://my.fusionheberg.com/storage/categories/MdRY3Es474g87l5KYEAxXJGXPMTF1moRjz8wdchJ.png"
-            storage="20Go de Stockage SSD" 
-            price="2.00€" 
+            storage="10Go de Stockage SSD" 
+            price="1.49 €" 
             aosType="fade-down" // Animation de fondu vers la gauche
             aosDuration="1000" // Durée de l'animation en millisecondes
             aosDelay="200" // Délai pour le deuxième élément
           />
-          <Service 
+          {/*<Service 
             title="Web" 
             ram="4Go de RAM" 
             vcore="1 vCore" 
@@ -51,14 +51,14 @@ const ServicesSection = () => {
             aosType="fade-up" // Animation de fondu vers la gauche
             aosDuration="1000" // Durée de l'animation en millisecondes
             aosDelay="0" // Pas de délai pour le troisième élément
-          />
+          />*/}
           <Service 
             title="Discord" 
-            ram="4Go de RAM" 
+            ram="1Go de RAM" 
             vcore="1 vCore" 
             icon="https://my.fusionheberg.com/storage/categories/5ydmAmV8Eac1SX49oDSzDm04Q1SCdMiA8GYMMNxX.png"
-            storage="20Go de Stockage SSD" 
-            price="2.00€" 
+            storage="10Go de Stockage SSD" 
+            price="0.49€" 
             aosType="fade-left" // Animation de fondu vers la gauche
             aosDuration="1000" // Durée de l'animation en millisecondes
             aosDelay="200" // Délai pour le quatrième élément
